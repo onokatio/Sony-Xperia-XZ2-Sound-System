@@ -37,3 +37,9 @@ Thoroughly tested on:
 
 ## Links
 [Module XDA Forum Thread](https://forum.xda-developers.com/crossdevice-dev/sony-themes-apps/port-sony-xperia-xz2-sound-enhancements-t3772758)
+
+## Make release zip
+
+```
+zip -x '.git/*' -r Sony-Xperia-XZ2-Sound-System.zip .
+```
