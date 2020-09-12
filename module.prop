@@ -1,7 +1,7 @@
 id=xz2-sound-system
 name=Xperia XZ2 Sound System - Magisk Edition
-version=v1.4
+version=v1.5
 versionCode=3
-author=@sirdoha & &KProject & @nyangkos
+author=@sirdoha & &KProject & @nyangkos & @onokatio
 description=Systemless Magisk Module of the Sony Xperia XZ2 Audio Processing PORT by @sirdoha - DSEE HX, ClearAudio+, S-Force, XLOUD, Clear Phase, Clear Stereo, Headphone Automatic Optimization, VPT, LDAC
 minMagisk=1500
