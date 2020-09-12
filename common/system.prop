@@ -1,0 +1,125 @@
+# This file will be read by resetprop
+# Example: Change dpi
+# ro.sf.lcd_density=320
+
+# Sony Effect
+#13211837 Decimal sum after removing DTS parser flag
+#13211901 Decimal sum after removing AC3 parser flag
+#13211903 Decimal sum after removing AIFF parser flag
+#13474047 Decimal sum after removing MKV parser flag
+#13475071 Decimal sum after removing OGG parser flag
+#13491455 Decimal sum after removing MP3 parser flag
+#13499647 Decimal sum after removing 3GP and 3G2 parser flag
+#13500415 Decimal sum after removing FLAC parser flag
+#13631487 is decimal sum of supported codecs in AAL
+#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD
+mm.enable.qcom_parser=13211837
+persist.mm.enable.prefetch=true
+
+# Automatic Headphone Compensation (AHC)
+sony.ahc.supported=yes
+
+# Media Framework
+# SONY Audio Effect
+#  Allocate bit for each effect.
+#  If necessary, define effect list with logical sum.
+#  EFFECT_DN        0x0001 (Dynamic Normalizer)
+#  EFFECT_SF        0x0002 (S-Force)
+#  EFFECT_CPHP      0x0004 (ClearPhase Headphone)
+#  EFFECT_CA        0x0008 (ClearAudio)
+#  EFFECT_VPT       0x0010 (VPT)
+#  EFFECT_CPSP      0x0020 (ClearPhase Speaker)
+#  EFFECT_XLOUD     0x0040 (xLOUD)
+#  EFFECT_CAPLUS    0x0080 (ClearAudio+)
+#  EFFECT_SPBUNDLE  0x0100 (Speaker Bundle)
+#  EFFECT_ALC       0x0200 (ALC)
+ 
+# Effect used by Speaker Bundle.
+# EFFECT_SF | EFFECT_CPSP | EFFECT_SPBUNDLE = 0x122
+sony.effect.custom.sp_bundle=0x122
+ 
+# Effect used by ClearAudio+ headset
+# EFFECT_CA | EFFECT_VPT | EFFECT_CAPLUS | EFFECT_ALC = 0x298
+sony.effect.custom.caplus_hs=0x298
+ 
+# Effect used by ClearAudio+ speaker
+# EFFECT_CA | EFFECT_VPT | EFFECT_CPSP | EFFECT_CAPLUS | EFFECT_ALC = 0x2B8
+sony.effect.custom.caplus_sp=0x2B8
+ 
+# Added system property for LDAC
+ro.somc.ldac.audio.supported=true
+
+# ClearAudio+
+ro.semc.clearaudio.supported=true
+persist.service.clearaudio.enable=1
+com.sonymobile.clearaudio_enabled=true
+
+# Dynamic Normalizer
+ro.semc.dynamicnormalizer.supported=true
+ro.somc.dynamicnormalizer.supported=true
+persist.service.dynamicnormalizer.enable=1
+com.sonymobile.dynamicnormalizer_enabled=true
+
+
+# S-Force
+ro.somc.sforce.supported=true
+persist.service.sforce.enable=1
+com.sonymobile.sforce_enabled=true
+
+# xLOUD
+ro.semc.xloud.supported=true
+persist.service.xloud.enable=1
+com.sonyericsson.xloud_enabled=true
+
+# ClearPhase
+ro.somc.clearphase.supported=true
+persist.service.clearphase.enable=1
+com.sonymobile.clearphase_enabled=true
+
+# Other Sony prop
+ro.semc.sound_effects.supported=true
+persist.service.sound_effects.enable=1
+ro.semc.sound_effects_enabled=true
+ro.semc.enhance.supported=true
+persist.service.enhance.enable=1
+sony.support.effect=0x1FF
+sony.support.effect=0x1FD
+sony.support.effect=0x0
+sony.support.effect=0x1
+sony.support.effect=0x2
+sony.support.effect=0x3
+sony.support.effect=0x4
+sony.support.effect=0x5
+sony.support.effect=0x6
+sony.support.effect=0x7
+sony.support.effect=0x8
+sony.support.effect=0x9
+sony.support.effect=0x10
+sony.support.effect=0x20
+sony.support.effect=0x40
+sony.support.effect=0x80
+sony.support.effect=0x100
+sony.support.effect=0x200
+sony.support.effect=0x1008
+sony.support.effect=0xa
+sony.support.effect=0xb
+tunnel.audio.encode=false
+persist.audio.ras.enabled=false
+audio.offload.video=false
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+audio.offload.track.enable=true
+audio.deep_buffer.media=true
+audio.heap.size.multiplier=7
+use.voice.path.for.pcm.voip=true
+audio.offload.multiaac.enable=true
+audio.offload.multiple.enabled=true
+audio.offload.passthrough=false
+ro.qc.sdk.audio.ssr=false
+audio.offload.gapless.enabled=true
+audio.safx.pbe.enabled=true
+flac.sw.decoder.24bit.support=true
+use.qti.sw.alac.decoder=true
+use.qti.sw.ape.decoder=true
+qcom.hw.aac.encoder=true
+fm.a2dp.conc.disabled=true
