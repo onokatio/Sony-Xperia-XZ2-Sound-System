@@ -123,3 +123,5 @@ use.qti.sw.alac.decoder=true
 use.qti.sw.ape.decoder=true
 qcom.hw.aac.encoder=true
 fm.a2dp.conc.disabled=true
+vendor.wlan.firmware.version="FW:2.0.0.0.50.0 HW:WCN3998"
+vendor.wlan.driver.version=5.2.03.29X
