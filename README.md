@@ -2,6 +2,9 @@
 
 *I am not author*
 
+Original Auther: @sirdoha [Github](https://github.com/sirdoha) [XDA forum](https://forum.xda-developers.com/m/sirdoha.7541648/)  
+Original Thread: https://forum.xda-developers.com/t/port-all-devices-all-roms-sony-xperia-xz2-sound-system-tm.3772758/
+
 ---
 
 # FEATURES
